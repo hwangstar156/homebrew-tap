@@ -5,21 +5,21 @@
 class Lazycc < Formula
   desc "TUI monitor for Claude Code sessions"
   homepage "https://github.com/hwangstar156/lazycc"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hwangstar156/lazycc/releases/download/v0.1.1/lazycc_0.1.1_darwin_amd64.tar.gz"
-      sha256 "e739c3cc6fe4fa4b1df115fcd60653b100aff75b8d0bf2285190993d57ddc398"
+      url "https://github.com/hwangstar156/lazycc/releases/download/v0.1.2/lazycc_0.1.2_darwin_amd64.tar.gz"
+      sha256 "c536db69f89981b5ebea0561120d119a70096b817d5ea5767a1b86fd4f5647bb"
 
       define_method(:install) do
         bin.install "lazycc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hwangstar156/lazycc/releases/download/v0.1.1/lazycc_0.1.1_darwin_arm64.tar.gz"
-      sha256 "51accd1c7db5d4b5a8c4d37b8474de798dcf163ecde51d8b95f9828b8afe1849"
+      url "https://github.com/hwangstar156/lazycc/releases/download/v0.1.2/lazycc_0.1.2_darwin_arm64.tar.gz"
+      sha256 "3e5ed4316d02c466fc677ea7c36985e8993d5d8cc90c2cd75dd2adcfff1885fb"
 
       define_method(:install) do
         bin.install "lazycc"
@@ -29,15 +29,15 @@ class Lazycc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hwangstar156/lazycc/releases/download/v0.1.1/lazycc_0.1.1_linux_amd64.tar.gz"
-      sha256 "0e7f528236d26e74d50eeec8b62f35c23a2e7bc47b53264bc4256c84020ce732"
+      url "https://github.com/hwangstar156/lazycc/releases/download/v0.1.2/lazycc_0.1.2_linux_amd64.tar.gz"
+      sha256 "7da192ac1c80830419ee1797ce67316ae279329e8d6d29610437eba0f80969c4"
       define_method(:install) do
         bin.install "lazycc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hwangstar156/lazycc/releases/download/v0.1.1/lazycc_0.1.1_linux_arm64.tar.gz"
-      sha256 "dc206d1c824151aa2b9f4ed256fa4ea2c3d3168882d324f5d9a20dd67f321a30"
+      url "https://github.com/hwangstar156/lazycc/releases/download/v0.1.2/lazycc_0.1.2_linux_arm64.tar.gz"
+      sha256 "ec451ec2e241a542d4d23878349a63a7a7d2d9936ddcba953922ad24d0ead57e"
       define_method(:install) do
         bin.install "lazycc"
       end
